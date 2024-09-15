@@ -7,19 +7,16 @@
 
 body {
     font-family: 'Chakra Petch', sans-serif;
-    font-weight: 500;
+    font-weight: 600;
     text-align: center;
     background-color: #ECE3CE;
     color: #3A4D39;
     box-sizing: border-box;
+    line-height: auto;
 }
 
 header {
     font-weight: bold;
-}
-
-main {
-    padding: 0 1%;
 }
 
 .contato {
@@ -64,12 +61,42 @@ main {
     background-color: #3A4D39;
 }
 
-section {
-    text-align: justify;
-    margin-bottom: 30px;
+.logo {
+    display: flex;
+    flex-direction: row;
+    align-items: top;
+    justify-content: space-around;
+    gap: 45%;
+    width: 100%;
+    height: 700px;
+    background-image: url(../assets/logo.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 0%;
+    background-size: 50%;
 }
 
-.eventos {
+.alinhamentoLogo {
+    display: flex;
+    flex-direction: column;
+    gap: 3%;
+    width: 20%;
+}
+
+main {
+    padding: 0 1%;
+}
+
+.pmargin {
+    margin-bottom: 2%;
+}
+
+section {
+    text-align: justify;
+    margin-bottom: 2%;
+    border-top: solid 3px #3A4D39;
+}
+
+.containerEventos {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -77,15 +104,56 @@ section {
     list-style: none;
 }
 
+.eventosArea {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    color: #3A4D39;
+    padding: 1.3%;
+    width: 15%;
+    border: solid 2px #3A4D39;
+    border-radius: 20px;
+    background-color: #739072;
+}
+
+.distancia {
+    width: 80%;
+}
+
+.topo {
+    color: #ECE3CE;
+    position: absolute;
+    right: 0.5%;
+    top: 219.5%;
+    padding: 0.65%;
+    background-color: #3A4D39;
+    border: #ECE3CE;
+    border-radius: 50%;
+    text-decoration: none;
+}
+
 footer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
     background-color: #3A4D39;
     color: #ECE3CE;
     padding: 1%;
     margin-top: 2%;
 }
 
+.footerContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
 h1, h2, h3 {
     margin-bottom: 1%;
+    font-weight: bold;
+    color: #283328;
 }
 
 .claro {
@@ -100,7 +168,7 @@ h1, h2, h3 {
     cursor: pointer;
 }
 
-.claroFundo {
+.claroFundo, .estilo {
     color:#ECE3CE;
     text-decoration: none;
     cursor: pointer;
@@ -109,15 +177,29 @@ h1, h2, h3 {
     border-radius: 15px;
 }
 
-.distancia {
-    width: 60%;
-    margin-bottom: 4%;
-}
-
 .escuro:hover {
     color: #739072;
+    border-bottom: solid 2px #739072;
 }
 
 .claro:hover {
     color: #fff;
+    border-bottom: solid 2px #ECE3CE;
+}
+
+.claroFundo:hover {
+    color: fff;
+    border: 2px solid #ECE3CE;
+}
+
+.estilo:hover {
+    background-color: #739072;
+    border: solid 2px #3A4D39;
+    color: #fff;
+}
+
+.topo:hover {
+    color: #fff;
+    background-color: #739072;
+    border: solid 2px #3A4D39;
 }
