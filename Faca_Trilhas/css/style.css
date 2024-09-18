@@ -198,22 +198,27 @@ h1, h2, h3 {
 .escuro:hover {
     color: #739072;
     border-bottom: solid 1px #739072;
+    transition: background-color 0.3s ease, border 0.3s ease, color 0.3s ease; 
 }
 
 .claro:hover {
     color: #fff;
     border-bottom: solid 1px #ECE3CE;
+    transition: border 0.3s ease, color 0.3s ease; 
 }
 
 .claroFundo:hover {
     color: #fff;
-    border: 1px solid #ECE3CE;
+    background-color: #739072;
+    border: 1px solid #3A4D39;
+    transition: background-color 0.3s ease, border 0.3s ease, color 0.3s ease; 
 }
 
 .estilo:hover {
     background-color: #739072;
     border: solid 1px #3A4D39;
     color: #fff;
+    transition: background-color 0.3s ease, border 0.3s ease, color 0.3s ease; 
 }
 
 .topo:hover {
