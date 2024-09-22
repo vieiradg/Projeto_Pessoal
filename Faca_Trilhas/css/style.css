@@ -123,14 +123,14 @@ section {
     justify-content: center;
     align-items: center;
     color: #3A4D39;
-    padding: 1.3%;
-    width: 15%;
+    padding: 1.5%;
+    width: 20%;
     border: solid 2px #3A4D39;
     border-radius: 20px;
-    background-color: #73907257;
+    background-color: #73907241;
     background-image: url(../assets/fundo.jpg);
     background-repeat: no-repeat;
-    background-position: 50% 115%;
+    background-position: 50% 120%;
     background-size: 100%;
 }
 

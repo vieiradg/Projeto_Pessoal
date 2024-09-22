@@ -1,5 +1,10 @@
 let dados = [
     {
+        titulo: "Gávea",
+        descricao: "A Pedra da Gávea, uma das mais icônicas do Rio de Janeiro, oferece uma trilha desafiadora com vista deslumbrante da cidade e do mar.",
+        link: "https://parquenacionaldatijuca.rio/locais/pedra-da-gavea/"
+    },
+    {
         titulo: "Parque da Cidade",
         descricao: "Uma vista panorâmica espetacular de Niterói e do Rio de Janeiro. Ideal para caminhadas leves e observação do pôr do sol.",
         link: "lorem"
@@ -52,11 +57,6 @@ let dados = [
     {
         titulo: "Cânions do Iconha",
         descricao: "Trilhas pelas formações rochosas dos cânions, proporcionando vistas espetaculares e cenários naturais incríveis.",
-        link: "lorem"
-    },
-    {
-        titulo: "Gávea",
-        descricao: "A Pedra da Gávea, uma das mais icônicas do Rio de Janeiro, oferece uma trilha desafiadora com vista deslumbrante da cidade e do mar.",
         link: "lorem"
     },
     {
