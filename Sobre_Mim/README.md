@@ -2,7 +2,7 @@
 
 ![image](https://github.com/user-attachments/assets/295f0f7a-6ce2-40be-aa9a-d4afa3bad686)
 
-(Veja o projeto)[https://vieiradg.github.io/Projeto_Pessoal/Sobre_Mim/]
+[Veja o projeto](https://vieiradg.github.io/Projeto_Pessoal/Sobre_Mim/)
 
 Este projeto é uma página de apresentação pessoal de **Diego Vieira**, destacando sua trajetória profissional, gostos pessoais e motivações para ingressar no mundo da programação.
 
