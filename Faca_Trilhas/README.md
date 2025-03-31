@@ -1,5 +1,8 @@
 # Faça Trilhas 🌲🚶‍♂️
 
+![image](https://github.com/user-attachments/assets/47c5e9a6-ef27-446c-96aa-c7cf8b619062)
+
+
 **Faça Trilhas** é um site interativo criado para incentivar a prática de trilhas em grupo. Ele combina perguntas motivadoras com respostas inspiradoras, promovendo o engajamento dos visitantes para explorar a natureza e participar de aventuras ao ar livre.
 
 ---
