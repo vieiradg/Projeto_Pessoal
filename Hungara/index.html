@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lanchonete</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Lanchonete</h1>
+    </header>
+
+    <section id="menu">
+        <h2>Cardápio</h2>
+        <div id="produtos">
+            <div class="produto" data-nome="Salgado de Frango" data-preco="5.00">
+                <h3>Salgado de Frango</h3>
+                <p>R$ 5.00</p>
+                <button class="adicionar">Adicionar ao carrinho</button>
+            </div>
+            <div class="produto" data-nome="Coxinha" data-preco="4.50">
+                <h3>Coxinha</h3>
+                <p>R$ 4.50</p>
+                <button class="adicionar">Adicionar ao carrinho</button>
+            </div>
+            <!-- Adicione mais produtos conforme necessário -->
+        </div>
+    </section>
+
+    <section id="carrinho">
+        <h2>Carrinho</h2>
+        <div id="itens-carrinho"></div>
+        <p id="total-carrinho">Total: R$ 0.00</p>
+        <button id="finalizar-pedido">Finalizar Pedido</button>
+
+        <div id="cep-container">
+            <input type="text" id="cep" placeholder="Digite seu CEP">
+            <button id="calcular-frete">Calcular Frete</button>
+        </div>
+        <p id="frete"></p>
+
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <h2>Confirmar Pedido</h2>
+                <div id="resumo-pedido"></div>
+                <p id="total-pedido"></p>
+                <div class="modal-buttons">
+                    <button id="cancelar-pedido">Cancelar</button>
+                    <button id="confirmar-pedido">Confirmar</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
