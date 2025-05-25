@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+body {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  background-color: #FFF4E0;
+  color: #5F2C1C;
+}
+
+header {
+  background-color: #DE2222;
+  padding: 15px;
+  color: #FFF4E0;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+#promocoes, #classicos, #gourmet {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#promocoes h2, #classicos h2, #gourmet h2 {
+  color: #DE2222;
+}
+#promocoes .container, #classicos .container, #gourmet .container {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+}
+#promocoes .container .promo, #promocoes .container .item, #classicos .container .promo, #classicos .container .item, #gourmet .container .promo, #gourmet .container .item {
+  background: #F3DCB3;
+  border: 0.7px solid #5F2C1C;
+  padding: 15px;
+  width: calc(45% - 20px); /* 2 itens por linha */
+  min-width: 280px; /* Evita que os itens fiquem muito pequenos */
+  max-width: 580px;
+  margin: 10px auto;
+  border-radius: 8px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+}
+#promocoes .container .promo:hover, #promocoes .container .item:hover, #classicos .container .promo:hover, #classicos .container .item:hover, #gourmet .container .promo:hover, #gourmet .container .item:hover {
+  transform: scale(1.05);
+}
+#promocoes .container .promo button, #promocoes .container .item button, #classicos .container .promo button, #classicos .container .item button, #gourmet .container .promo button, #gourmet .container .item button {
+  background-color: #DE2222;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+}
+#promocoes .container .promo button:hover, #promocoes .container .item button:hover, #classicos .container .promo button:hover, #classicos .container .item button:hover, #gourmet .container .promo button:hover, #gourmet .container .item button:hover {
+  background-color: #b21b1b;
+}
+
+#carrinho {
+  margin: 20px auto;
+  width: 380px;
+  background: #F3DCB3;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+#carrinho h2 {
+  color: #DE2222;
+}
+#carrinho .carrinho-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #F3DCB3;
+  padding: 5px;
+  margin: 5px 0;
+  border: 1px solid #5F2C1C;
+  border-radius: 5px;
+  text-align: left;
+}
+#carrinho .remover {
+  background-color: #F3DCB3;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: transform 0.2s ease-in-out;
+}
+#carrinho .remover:hover {
+  background-color: rgba(182, 29, 29, 0.4392156863);
+  transform: scale(1.15);
+}
+#carrinho #total {
+  margin-top: 10px;
+  font-size: 1.2em;
+}
+#carrinho #finalizar-pedido {
+  background-color: #DE2222;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  width: 100%;
+  margin-top: 10px;
+}
+#carrinho #finalizar-pedido:disabled {
+  background-color: #5F2C1C;
+  cursor: not-allowed;
+}
+#carrinho #finalizar-pedido:hover:not(:disabled) {
+  background-color: #b21b1b;
+}
+
+footer {
+  background-color: #5F2C1C;
+  color: white;
+  padding: 10px;
+  margin-top: 40px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+@media (max-width: 600px) {
+  .item, .promo {
+    width: 100%;
+  }
+}/*# sourceMappingURL=style.css.map */

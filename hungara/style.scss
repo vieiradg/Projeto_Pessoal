@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+$cor-principal: #DE2222;  // Cor principal (vermelho vibrante)
+$cor-secundaria: #DE2222; // Cor secundária (vermelho vibrante)
+$cor-fundo: #FFF4E0;      // Cor de fundo (bege claro)
+$cor-texto: #5F2C1C;      // Cor do texto (marrom escuro)
+$cor-hover-excluir: #b61d1d70; // Cor de hover do botão de excluir
+
+body {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    background-color: $cor-fundo;
+    color: $cor-texto;
+}
+
+header {
+    background-color: $cor-principal;
+    padding: 15px;
+    color: $cor-fundo;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+#promocoes, #classicos, #gourmet {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h2 {
+        color: $cor-principal;
+    }
+
+    .container {
+        width: 80%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 20px;
+
+        .promo, .item {
+            background: #F3DCB3; // Cor de fundo dos itens (bege claro)
+            border: 0.7px solid $cor-texto; 
+            padding: 15px;
+            width: calc(45% - 20px); /* 2 itens por linha */
+            min-width: 280px; /* Evita que os itens fiquem muito pequenos */
+            max-width: 580px;
+            margin: 10px auto;
+            border-radius: 8px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s ease-in-out;
+
+            &:hover {
+                transform: scale(1.05);
+            }
+
+            button {
+                background-color: $cor-secundaria;
+                color: white;
+                border: none;
+                padding: 8px 12px;
+                border-radius: 5px;
+                cursor: pointer;
+                font-size: 1em;
+
+                &:hover {
+                    background-color: darken($cor-secundaria, 10%);
+                }
+            }
+        }
+    }
+}
+
+#carrinho {
+    margin: 20px auto;
+    width: 380px;
+    background: #F3DCB3; // Cor de fundo do carrinho
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+
+    h2 {
+        color: $cor-principal;
+    }
+
+    .carrinho-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: #F3DCB3; // Cor de fundo dos itens do carrinho
+        padding: 5px;
+        margin: 5px 0;
+        border: 1px solid #5F2C1C;
+        border-radius: 5px;
+        text-align: left;
+    }
+
+    .remover {
+        background-color:  #F3DCB3; // Usando a cor principal do site para o botão de remover
+        border: none;
+        padding: 5px 10px;
+        cursor: pointer;
+        border-radius: 5px;
+        transition: transform 0.2s ease-in-out;
+    }
+    
+    .remover:hover {
+        background-color: $cor-hover-excluir; // Tom de vermelho mais intenso para o hover
+        transform: scale(1.15);
+    }
+
+    #total {
+        margin-top: 10px;
+        font-size: 1.2em;
+    }
+
+    #finalizar-pedido {
+        background-color: $cor-principal;
+        color: white;
+        border: none;
+        padding: 8px 12px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 1em;
+        width: 100%;
+        margin-top: 10px;
+        &:disabled {
+            background-color: $cor-texto;
+            cursor: not-allowed;
+        }
+        &:hover:not(:disabled) {
+            background-color: darken($cor-principal, 10%); // Hover de finalizar pedido
+        }
+    }
+}
+
+footer {
+    background-color: $cor-texto;
+    color: white;
+    padding: 10px;
+    margin-top: 40px; 
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+@media (max-width: 600px) {
+    .item, .promo {
+        width: 100%;
+    }
+}
+
+// to comitando e a mudança não quer irrrrrrrr porra 
